@@ -1,4 +1,3 @@
-COMPONENT.HTML
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Love your Pets!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,13 +10,13 @@ COMPONENT.HTML
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dogs</a>
+          <a class="nav-link" href="/dog">Dogs</a>
+        </li>
+        <li class="Cats">
+          <a class="nav-link" href="/cat">Cats</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Elephants</a>
+          <a class="nav-link" href="/elephant">Elephants</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -26,23 +25,18 @@ COMPONENT.HTML
       </form>
     </div>
   </nav>
+ 
+  <!-- <app-messages></app-messages>  -->
 
-
-<br />
-  <br />
-  <br />
-  <br />
 <head> </head>
 
 <body>
-
-
-
   <div class="container">
     <div class="jumbotron">
       <h1>Welcome to Carl's Pet Shop!</h1>
       <h2>If you love your pet, you will buy your shit here. </h2>
     </div>
+
     
     
     <!--
@@ -56,24 +50,24 @@ COMPONENT.HTML
   </div>
   <div class="flex-container">
   <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-      <div class="card-header">Header</div>
+      <div class="card-header">Dogs</div>
       <div class="card-body">
         <h4 class="card-title">Canines</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Find the food, clothing, and toys to keep your best friend, happy, healthy, and stylish.</p>
       </div>
     </div>
     <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
+        <div class="card-header">Cats</div>
         <div class="card-body">
           <h4 class="card-title">Felines</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Find the food, clothing, and toys for your favorite furrball. Lets keep in mind nothing will get your cat to like you but these things will help it hate you less.</p>
         </div>
       </div>
       <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-          <div class="card-header">Header</div>
+          <div class="card-header">Elephants</div>
           <div class="card-body">
             <h4 class="card-title">Pachyderms</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Keep your large pal up to date with the latest styles. Feeding your large buddy couldn't be easier with our selection.</p>
           </div>
         </div>
       </div>
@@ -111,8 +105,6 @@ COMPONENT.HTML
         <button type="submit" class="btn btn-primary">Submit</button>
       </fieldset>
     </form>
-  <br />
-  <br />
-
   
 </body>
+<router-outlet></router-outlet>
