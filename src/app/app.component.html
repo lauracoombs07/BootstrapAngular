@@ -1,92 +1,118 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Love your Pets!</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Cats <span class="sr-only">(current)</span></a></li>
-        <li><a href="https://google.com">Dogs</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Clothing</a></li>
-            <li><a href="#">Toys</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">By Pet</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Wish List</a></li>
-          </ul>
+COMPONENT.HTML
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Love your Pets!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Elephants</a>
         </li>
       </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop our Products <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Cats</a></li>
-            <li><a href="#">Dogs</a></li>
-            <li><a href="#">Elephants</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Products</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-
-
-<div class="container">
-  <div class="jumbotron">
-    <h1>Welcome to Carl's Pet Shop!</h1>
-    <h2></h2>
-  </div>
-  <!-- <div class="panel panel-primary">
-    <div class="panel-heading">Status</div>
-    <div class="panel-body">
-      <h3>{{title}}</h3>
     </div>
-  </div> -->
-</div>
+  </nav>
 
-<div class="input-group">
-    <span class="input-group-addon" id="basic-addon1">User Name</span>
-    <input type="text" class="form-control" placeholder="Enter your email" aria-describedby="basic-addon1">
+
+<br />
+  <br />
+  <br />
+  <br />
+<head> </head>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to Carl's Pet Shop!</h1>
+      <h2>If you love your pet, you will buy your shit here. </h2>
+    </div>
+    
+    
+    <!--
+      <div class="panel panel-primary">
+        <div class="panel-heading">Status</div>
+        <div class="panel-body">
+          <h3>{{title}}</h3>
+        </div>
+      </div>
+    -->
   </div>
+  <div class="flex-container">
+  <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Canines</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Felines</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h4 class="card-title">Pachyderms</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+  <form>
+      <fieldset>
+        <legend></legend>
+        <div div class="flex-container">
+          
+        
+        </div>
+        <div class="flex-container1">
+          <label for="exampleInputEmail1">Email address</label>
+          <br>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div div class="flex-container1">
+          <label for="exampleInputPassword1">Password</label>
+          <br>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        
+        <fieldset div class="flex-container1">
+          <legend></legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" checked="">
+              Check here to receive our catalog.
+            </label>
+          </div>
+          
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+  <br />
+  <br />
+
   
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-    <span class="input-group-addon" id="basic-addon2">@example.com</span>
-  </div>
-  
-  <div class="input-group">
-    <span class="input-group-addon">$</span>
-    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <span class="input-group-addon">.00</span>
-  </div>
-  
-  <label for="basic-url">Your vanity URL</label>
-  <div class="input-group">
-    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-  </div>
+</body>

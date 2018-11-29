@@ -1,3 +1,15 @@
-.container {
-    display: flex; /* or inline-flex */
-  }
+body {
+  background-color:whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+flex-container1 {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
