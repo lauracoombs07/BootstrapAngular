@@ -11,6 +11,15 @@ import { CatComponent } from './cat/cat.component';
 import { ElephantComponent } from './elephant/elephant.component';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
+import { CatfoodComponent } from './catfood/catfood.component';
+import { CatclothesComponent } from './catclothes/catclothes.component';
+import { CattoysComponent } from './cattoys/cattoys.component';
+import { DogtoysComponent } from './dogtoys/dogtoys.component';
+import { DogclothesComponent } from './dogclothes/dogclothes.component';
+import { DogfoodComponent } from './dogfood/dogfood.component';
+import { ElephantfoodComponent } from './elephantfood/elephantfood.component';
+import { ElephantclothesComponent } from './elephantclothes/elephantclothes.component';
+import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,16 @@ import { CardsComponent } from './cards/cards.component';
     CatComponent,
     ElephantComponent,
     LoginComponent,
-    CardsComponent
+    CardsComponent,
+    CatfoodComponent,
+    CatclothesComponent,
+    CattoysComponent,
+    DogtoysComponent,
+    DogclothesComponent,
+    DogfoodComponent,
+    ElephantfoodComponent,
+    ElephantclothesComponent,
+    ElephanttoysComponent
   ],
   imports: [
     BrowserModule,

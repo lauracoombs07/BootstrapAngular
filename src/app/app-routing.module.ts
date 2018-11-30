@@ -5,6 +5,15 @@ import { DogComponent } from './dog/dog.component';
 import { ElephantComponent } from './elephant/elephant.component';
 import { CardsComponent } from './cards/cards.component';
 import { LoginComponent } from './login/login.component';
+import { CatfoodComponent } from './catfood/catfood.component';
+import { CatclothesComponent } from './catclothes/catclothes.component';
+import { CattoysComponent } from './cattoys/cattoys.component'
+import { DogfoodComponent } from './dogfood/dogfood.component';
+import { DogclothesComponent } from './dogclothes/dogclothes.component';
+import { DogtoysComponent } from './dogtoys/dogtoys.component'
+import { ElephantfoodComponent } from './elephantfood/elephantfood.component';
+import { ElephantclothesComponent } from './elephantclothes/elephantclothes.component';
+import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component'
 
 const routes: Routes = [
   // { path: 'Cats', redirectTo: '/cat/cat.component.html', pathMatch: 'full'}
@@ -12,7 +21,17 @@ const routes: Routes = [
   { path: 'dog', component: DogComponent},
   { path: 'elephant', component: ElephantComponent},
   { path: 'cards', component: CardsComponent},
-  { path: 'login', component: LoginComponent}
+  { path: 'login', component: LoginComponent},
+  { path: 'catfood', component: CatfoodComponent},
+  { path: 'catclothes', component: CatclothesComponent},
+  { path: 'cattoys', component: CattoysComponent},
+  { path: 'dogfood', component: DogfoodComponent},
+  { path: 'dogclothes', component: DogclothesComponent},
+  { path: 'dogtoys', component: DogtoysComponent},
+  { path: 'elephantfood', component: ElephantfoodComponent},
+  { path: 'elephantclothes', component: ElephantclothesComponent},
+  { path: 'elephanttoys', component: ElephanttoysComponent}
+
 ];
 
 @NgModule({
