@@ -1,5 +1,5 @@
 body {
-  background-color:whitesmoke;
+  background-color:rgb(88, 83, 145);
 }
 
 .flex-container {
@@ -8,7 +8,7 @@ body {
   justify-content: space-around;
 }
 
-flex-container1 {
+.flex-container1 {
   display: flex;
   /* justify-content: center; */
   justify-content: space-around;
