@@ -6,3 +6,10 @@
   .PH {
     color: white;
   }
+  .card-header {
+    font-size: 25px;
+    font-weight: bold; 
+  }
+  .shop-now {
+      text-align: center;
+  }
