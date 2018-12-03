@@ -8,10 +8,16 @@ import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http'
   styleUrls: ['./dogfood.component.css']
 })
 export class DogfoodComponent implements OnInit {
+  food$;
+  constructor( private FoodService: FoodService ) { }
 
-  constructor( private http: HttpClient ) { }
+  fetchFood() {
+
+    this.food$ = this.FoodService.fetchFood();
+  }
 
   ngOnInit() {
   }
+  
 
 }

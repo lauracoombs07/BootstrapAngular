@@ -13,8 +13,8 @@ export class AppComponent {
   user$;
   food$;
   constructor(
-    public FoodService: FoodService, 
-    public UserService: UserService 
+    private FoodService: FoodService, 
+    private UserService: UserService 
     
     ) {}
   
