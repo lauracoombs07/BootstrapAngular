@@ -1,0 +1,17 @@
+.form-text { 
+    color: whitesmoke; 
+}
+.form-check {
+    color: whitesmoke;
+}
+.exampleInputEmail1 {
+    color: white;
+    font-variant-caps: small-caps;
+    font-size: 30px;
+}
+.exampleInputPassword1 {
+    color: white;
+    font-variant-caps: small-caps;
+    font-size: 30px;
+}
+

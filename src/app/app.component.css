@@ -1,7 +1,12 @@
 body {
-  background-color:rgb(88, 83, 145);
+  background-color:rgba(118, 114, 158, 0.938);
 }
-
+.nav-link {
+  font-size: 25px;
+}
+.navbar-brand {
+  font-size: 25px;
+}
 .flex-container {
   display: flex;
   justify-content: center;
