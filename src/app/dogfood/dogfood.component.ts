@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-dogfood',
@@ -13,7 +14,7 @@ export class DogfoodComponent implements OnInit {
 
   fetchFood() {
 
-    this.food$ = this.FoodService.fetchFood();
+    return this.food$ = this.FoodService.fetchFood();
   }
 
   ngOnInit() { this.fetchFood()

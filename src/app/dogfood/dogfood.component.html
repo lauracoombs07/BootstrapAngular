@@ -1,19 +1,20 @@
 <div class="container">
     <div class="jumbotron">
-      <!-- <h1> Dog Food Page </h1>
-      <h2> Sub heading info here </h2>
-
-      <p> 
-      add text with additional info
-      </p> -->
-  
-      products here
-      <button (click)="fetchFood()">Fetch Food</button>
+      <h1> Dog Food </h1>
+      
+      
 
 <hr />
 
-<ul>
-  <li *ngFor="let food of food$ | async">{{ food.name }}</li>
+<ul style="list-style-type:none">
+  <li *ngFor="let food of food$ | async">
+    <h2>{{ food.name }}</h2>
+    <img src="{{food.picture}}" style="width:200px"><br/>
+    ONLY ${{food.price}}<br/>
+    Product Description:<br/>
+    <i>{{food.description}} </i>
+      <hr/>
+  </li>
 </ul>
 
   
