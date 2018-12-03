@@ -4,6 +4,11 @@
 .form-check {
     color: whitesmoke;
 }
+.exampleInputName {
+    color: white;
+    font-variant-caps: small-caps;
+    font-size: 30px;
+}
 .exampleInputEmail1 {
     color: white;
     font-variant-caps: small-caps;
