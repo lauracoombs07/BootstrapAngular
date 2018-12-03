@@ -1,14 +1,21 @@
 <div class="container">
     <div class="jumbotron">
-      <h1> Dog Food Page </h1>
+      <!-- <h1> Dog Food Page </h1>
       <h2> Sub heading info here </h2>
 
       <p> 
       add text with additional info
-      </p>
-      <p>
+      </p> -->
+  
       products here
+      <button (click)="fetchFood()">Fetch Food</button>
 
-      </p>
+<hr />
+
+<ul>
+  <li *ngFor="let food of food$ | async">{{ food.name }}</li>
+</ul>
+
+  
      
     </div>

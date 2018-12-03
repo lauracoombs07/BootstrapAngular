@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserService } from './user.service';
+import { FoodService } from './food.service';
 import { DogComponent } from './dog/dog.component';
 import { CatComponent } from './cat/cat.component';
 import { ElephantComponent } from './elephant/elephant.component';
@@ -42,10 +46,15 @@ import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
-  providers: [],
+  providers: [ 
+    UserService,
+    FoodService], 
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

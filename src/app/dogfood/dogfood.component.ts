@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodService } from '../food.service';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-dogfood',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogfoodComponent implements OnInit {
 
-  constructor() { }
+  constructor( private http: HttpClient ) { }
 
   ngOnInit() {
   }
