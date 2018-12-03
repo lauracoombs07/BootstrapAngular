@@ -16,7 +16,7 @@ export class DogfoodComponent implements OnInit {
     this.food$ = this.FoodService.fetchFood();
   }
 
-  ngOnInit() {
+  ngOnInit() { this.fetchFood()
   }
   
 
