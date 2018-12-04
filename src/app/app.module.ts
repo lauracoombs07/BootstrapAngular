@@ -27,6 +27,7 @@ import { ElephantfoodComponent } from './elephantfood/elephantfood.component';
 import { ElephantclothesComponent } from './elephantclothes/elephantclothes.component';
 import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { HomeComponent } from './home/home.component';
     ElephantfoodComponent,
     ElephantclothesComponent,
     ElephanttoysComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,3 @@
-<!-- <button (click)>Get Users</button> -->
-<button (click)="fetchUser()">Fetch Users</button>
-
-<hr /> -->
-
-<ul>
-  <li *ngFor="let user of user$ | async">{{ user.name}}</li>
-</ul>
-
-
-
 <div class="flex-container1">
     <label class="exampleInputName">Name</label>
     <br>
@@ -45,6 +34,6 @@
         
       </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="submit" (click)="postUser()">Post User</button>
+      <button type="submit" class="btn btn-primary" (click)="postUser()">Post User</button>
     </fieldset>
   </form>

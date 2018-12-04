@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Admin</h1>
+    <p> 
+    Admin controls page
+    </p>
+    <button (click)="fetchUser()">Retrieve list of Users</button>
+
+<hr /> -->
+
+<ul>
+  <li *ngFor="let user of user$ | async">{{ user.name}}</li>
+</ul>
+   
+  </div>

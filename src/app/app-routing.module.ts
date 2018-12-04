@@ -14,7 +14,8 @@ import { DogtoysComponent } from './dogtoys/dogtoys.component'
 import { ElephantfoodComponent } from './elephantfood/elephantfood.component';
 import { ElephantclothesComponent } from './elephantclothes/elephantclothes.component';
 import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   // { path: 'Cats', redirectTo: '/cat/cat.component.html', pathMatch: 'full'}
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: 'dogtoys', component: DogtoysComponent},
   { path: 'elephantfood', component: ElephantfoodComponent},
   { path: 'elephantclothes', component: ElephantclothesComponent},
-  { path: 'elephanttoys', component: ElephanttoysComponent}
+  { path: 'elephanttoys', component: ElephanttoysComponent},
+  { path: 'admin', component: AdminComponent}
  
 
 ];

@@ -1,5 +1,5 @@
 body {
-  background-color:rgba(118, 114, 158, .7);
+  background-color:rgb(130,127,167);
 }
 .nav-link {
   font-size: 25px;
@@ -19,11 +19,4 @@ body {
   display: flex;
   /* justify-content: center; */
   justify-content: space-around;
-}
-.PIC{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  height: 300px;
 }
