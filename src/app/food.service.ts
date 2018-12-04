@@ -19,11 +19,15 @@ export class FoodService {
         return this.http
             .get<Food>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "dog"}}');
     }
+    fetchCatfood(): Observable<Food> {
 
-    // fetchCatFood(): Observable<catFood> {
+        return this.http
+            .get<Food>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "cat"}}');
+    }
+    fetchElephantfood(): Observable<Food> {
 
-    //     return this.http
-    //         .get<catFood>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "cat"}}');
-    // }
+        return this.http
+            .get<Food>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "elephant"}}');
+    }
 
 }
