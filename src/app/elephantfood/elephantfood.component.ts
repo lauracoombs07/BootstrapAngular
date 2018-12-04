@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
