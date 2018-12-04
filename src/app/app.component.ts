@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserService } from './user.service';
 import { FoodService } from './food.service';
+import { ToysService } from './toys.service';
+import { ClothesService } from './clothes.service';
 
 
 @Component({
@@ -12,21 +14,32 @@ import { FoodService } from './food.service';
 export class AppComponent {
   user$;
   food$;
+  toys$;
+  clothes$;
+
   constructor(
     private FoodService: FoodService, 
-    private UserService: UserService 
-    
+    private UserService: UserService, 
+    private ToysService: ToysService,
+    private ClothesService: ClothesService
     ) {}
   
   fetchUser() {
 
     this.user$ = this.UserService.fetchUser();
   }
-
   fetchFood() {
 
     this.food$ = this.FoodService.fetchFood();
   }
+  fetchToys() {
+
+  this.toys$ = this.ToysService.fetchToys();
+}
+  fetchClothes() {
+
+  this.clothes$ = this.ClothesService.fetchClothes();
+}
 
 }
 
@@ -41,8 +54,3 @@ export class PageCard {
     return outlet && outlet.activatedRouteData;
     }
 }
-// export class AppComponent {
-//   title = 'myproject';
-//   getData(outlet: RouterOutlet){
-//   return outlet && outlet.activatedRouteData;
-//   }
