@@ -19,5 +19,14 @@ export class ToysService {
         return this.http
             .get<Toys>('https://teamangular-lgjhyymvwp.now.sh/api/toys'+'?filter={"where": {"animal": "dog"}}');
     }
+    fetchCattoys(): Observable<Toys> {
 
+        return this.http
+            .get<Toys>('https://teamangular-lgjhyymvwp.now.sh/api/toys'+'?filter={"where": {"animal": "cat"}}');
+    }
+    fetchElephanttoys(): Observable<Toys> {
+
+        return this.http
+            .get<Toys>('https://teamangular-lgjhyymvwp.now.sh/api/toys'+'?filter={"where": {"animal": "elephant"}}');
+    }
 }

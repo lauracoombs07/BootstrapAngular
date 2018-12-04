@@ -36,7 +36,7 @@ export class AppComponent {
 
   this.toys$ = this.ToysService.fetchToys();
 }
-fetchClothes() {
+  fetchClothes() {
 
   this.clothes$ = this.ClothesService.fetchClothes();
 }

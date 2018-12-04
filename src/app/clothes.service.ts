@@ -19,5 +19,15 @@ export class ClothesService {
         return this.http
             .get<Clothes>('https://teamangular-lgjhyymvwp.now.sh/api/clothes'+'?filter={"where": {"animal": "dog"}}');
     }
+    fetchCatclothes(): Observable<Clothes> {
+
+        return this.http
+            .get<Clothes>('https://teamangular-lgjhyymvwp.now.sh/api/clothes'+'?filter={"where": {"animal": "cat"}}');
+    }
+    fetchElephantclothes(): Observable<Clothes> {
+
+        return this.http
+            .get<Clothes>('https://teamangular-lgjhyymvwp.now.sh/api/clothes'+'?filter={"where": {"animal": "elephant"}}');
+    }
 
 }
