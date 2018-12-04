@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
 import { FoodService } from './food.service';
+import { ToysService } from './toys.service';
 import { DogComponent } from './dog/dog.component';
 import { CatComponent } from './cat/cat.component';
 import { ElephantComponent } from './elephant/elephant.component';
@@ -53,7 +54,9 @@ import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
   ],
   providers: [ 
     UserService,
-    FoodService], 
+    FoodService,
+    ToysService
+  ], 
 
   bootstrap: [AppComponent]
 })

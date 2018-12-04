@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ToysService } from '../toys.service';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-dogtoys',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dogtoys.component.css']
 })
 export class DogtoysComponent implements OnInit {
+  toys$;
+  constructor( private ToysService: ToysService ) { }
 
-  constructor() { }
+  fetchToys() {
 
-  ngOnInit() {
+    return this.toys$ = this.ToysService.fetchToys();
   }
+
+  ngOnInit() { this.fetchToys()
+  }
+  
 
 }
