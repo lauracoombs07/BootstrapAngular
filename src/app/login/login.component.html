@@ -1,20 +1,30 @@
+<!-- <button (click)>Get Users</button> -->
+<button (click)="fetchUser()">Fetch Users</button>
+
+<hr /> -->
+
+<ul>
+  <li *ngFor="let user of user$ | async">{{ user.name}}</li>
+</ul>
+
+
 
 <div class="flex-container1">
     <label class="exampleInputName">Name</label>
     <br>
-    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+    <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
     <!-- <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small> -->
   </div>
     <div>
       <label class="exampleInputEmail1">Email address</label>
       <br>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
     </div>
 <div>
   <label class="exampleInputPassword1">Password</label>
   <br>
-  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  <input type="password" class="form-control" id="password" placeholder="Password">
 </div>
 <form>
     <fieldset>
@@ -35,5 +45,6 @@
         
       </fieldset>
       <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" (click)="postUser()">Post User</button>
     </fieldset>
   </form>

@@ -3,21 +3,21 @@ import { Observable } from 'rxjs';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 //dog food 
 
-export interface Food {
+export interface elephantFood {
     name: string;
     description: string;
     price: number;
     picture: string;
 }
 @Injectable()
-export class FoodService {
+export class elephantFoodService {
     
     constructor(private http: HttpClient ) {}
 
-    fetchFood(): Observable<Food> {
+    fetchFood(): Observable<elephantFood> {
 
         return this.http
-            .get<Food>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "dog"}}');
+            .get<elephantFood>('https://teamangular-lgjhyymvwp.now.sh/api/food'+'?filter={"where": {"animal": "elephant"}}');
     }
 
     // fetchCatFood(): Observable<catFood> {
