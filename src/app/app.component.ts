@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { UserService } from './user.service';
 import { FoodService } from './food.service';
 import { ToysService } from './toys.service';
+import { ClothesService } from './clothes.service';
 
 
 @Component({
@@ -14,10 +15,13 @@ export class AppComponent {
   user$;
   food$;
   toys$;
+  clothes$;
+
   constructor(
     private FoodService: FoodService, 
     private UserService: UserService, 
-    private ToysService: ToysService
+    private ToysService: ToysService,
+    private ClothesService: ClothesService
     ) {}
   
   fetchUser() {
@@ -31,6 +35,10 @@ export class AppComponent {
   fetchToys() {
 
   this.toys$ = this.ToysService.fetchToys();
+}
+fetchClothes() {
+
+  this.clothes$ = this.ClothesService.fetchClothes();
 }
 
 }
