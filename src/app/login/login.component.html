@@ -18,7 +18,7 @@
   <input type="password" class="form-control" id="password" name="password" #password="ngModel" placeholder="Password"[(ngModel)]="model.password">
 </div>
 <form>
-    <fieldset>
+    <fieldset class="flex-container">
       <fieldset div class="flex-container1">
         <legend></legend>
         <div class="form-check">
@@ -29,8 +29,6 @@
         </div>
         
       </fieldset>
-      <button type="submit" class="btn btn-primary">Submit</button>
       <button type="submit" class="btn btn-primary" (click)="postUser()">Post User</button>
-      <button type="submit">Add User</button>
     </fieldset>
   </form>

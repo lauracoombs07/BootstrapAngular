@@ -14,11 +14,10 @@
     <div class="col-2"><h5>Name</h5> 
       <li *ngFor="let user of user$ | async">{{ user.name }}<hr/></li>
     </div>
-      <div class="col-3"><h5>Password</h5>    
-        <li *ngFor="let user of user$ | async">{{ user.password }}<hr/></li>
+      <div class="col-3"><h5>Email</h5>    
+        <li *ngFor="let user of user$ | async">{{ user.email }}<hr/></li>
       </div>
     <div class="col-4"><h5>Delete</h5>
-      
       <li *ngFor="let user of user$ | async" > 
         <button class="delete" (click)="deleteUser(user.id)">Delete</button><hr/></li>
 

@@ -19,3 +19,6 @@
     font-variant-caps: small-caps;
     font-size: 30px;
 }
+.flex-container {
+    padding-bottom: 180px;
+}
