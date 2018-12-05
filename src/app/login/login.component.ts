@@ -21,6 +21,9 @@ export class LoginComponent implements OnInit {
     await this.UserService.postUser(this.model);
   }
 
+  async postUSer(){
+    await this.UserService.postUser(this.model);
+  }
   fetchUser() {
     return (this.user$ = this.UserService.fetchUser());
   }

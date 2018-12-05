@@ -19,6 +19,7 @@ export class UserService {
 
         return this.httpClient
             .get<User>('https://teamangular-lgjhyymvwp.now.sh/api/users');
+            
     }
 
     async postUser(formData): Promise<User> {
