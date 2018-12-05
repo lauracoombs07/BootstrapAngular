@@ -1,0 +1,19 @@
+.row {
+    list-style: none;
+  }
+ .col-1 {
+     font-size: 19.5px;
+     padding-top: 5px;
+ }
+ .col-2 {
+    font-size: 19.5px;
+    padding-top: 5px;
+}
+.col-3 {
+    font-size: 19.5px;
+    padding-top: 5px;
+}
+.col-4 {
+    padding-top: 5px;
+}
+ 

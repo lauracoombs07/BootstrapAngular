@@ -2,14 +2,27 @@
   <div class="jumbotron">
     <h1>Admin</h1>
     <p> 
-    Admin controls page
+    Admin access to users accounts
     </p>
-    <button (click)="fetchUser()">Retrieve list of Users</button>
+<hr />
+    <button (click)="fetchUser()" class="btn btn-primary">Retrieve list of Users</button>
 
-<hr /> -->
-
-<ul>
-  <li *ngFor="let user of user$ | async">{{ user.name}}</li>
-</ul>
-   
+<div class ="row">
+  <div class="col-1"><h5>ID</h5>
+    <li *ngFor="let user of user$ | async">{{user.id}}<hr/></li>
   </div>
+    <div class="col-2"><h5>Name</h5> 
+      <li *ngFor="let user of user$ | async">{{ user.name }}<hr/></li>
+    </div>
+      <div class="col-3"><h5>Password</h5>    
+        <li *ngFor="let user of user$ | async">{{ user.password }}<hr/></li>
+      </div>
+    <div class="col-4"><h5>Delete</h5>
+      
+      <li *ngFor="let user of user$ | async" ><button class="delete" ng-click="deleteUser(user.id)">Delete</button><hr/></li>
+
+      <!-- <li *ngFor="let user of user$ | async">{{ user.delete }}</li> --> 
+      <!-- <button routerLink = "/">Delete</button> -->
+
+    </div>
+</div>
