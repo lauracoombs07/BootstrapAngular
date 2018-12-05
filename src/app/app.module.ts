@@ -28,6 +28,7 @@ import { ElephantclothesComponent } from './elephantclothes/elephantclothes.comp
 import { ElephanttoysComponent } from './elephanttoys/elephanttoys.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { AdminComponent } from './admin/admin.component';
     HttpClientModule,
     NgbModule.forRoot(),
     AppRoutingModule,
+    FormsModule
 
   ],
   providers: [ 

@@ -13,18 +13,21 @@ export interface User {
 @Injectable()
 export class UserService {
     
-    constructor(private http: HttpClient ) {}
+    constructor(private httpClient: HttpClient ) {}
 
     fetchUser(): Observable<User> {
 
-        return this.http
+        return this.httpClient
             .get<User>('https://teamangular-lgjhyymvwp.now.sh/api/users');
     }
 
-    postUser(): Observable<User> {
+    async postUser(formData): Promise<User> {
 
-        return this.http
-            .get<User>('https://teamangular-lgjhyymvwp.now.sh/api/users');
+        return await this.httpClient.post<User>(
+            "https://teamangular-lgjhyymvwp.now.sh/api/users",
+            formData
+            ).toPromise()
+            
     }
 
 }
