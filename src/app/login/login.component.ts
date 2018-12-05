@@ -6,7 +6,7 @@ import {
   HttpParams
 } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { __await } from "db/node_modules/tslib/tslib";
+// import { __await } from "db/node_modules/tslib/tslib";
 
 @Component({
   selector: "app-dogfood",
