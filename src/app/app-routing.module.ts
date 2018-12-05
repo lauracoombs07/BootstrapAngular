@@ -18,7 +18,6 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
-  // { path: 'Cats', redirectTo: '/cat/cat.component.html', pathMatch: 'full'}
   { path: '', redirectTo: "/home", pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'cat', component: CatComponent},

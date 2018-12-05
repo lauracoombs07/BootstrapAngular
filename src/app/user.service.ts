@@ -30,7 +30,12 @@ export class UserService {
             ).toPromise()
             
     }
+    deleteUser(userID): Observable<void> {
+        return this.httpClient.delete<void>(
+        `https://teamangular-lgjhyymvwp.now.sh/api/users/${userID}`
 
+    )
+}
 }
 
 

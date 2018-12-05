@@ -15,6 +15,9 @@ export class AdminComponent implements OnInit {
   fetchUser() {
     return this.user$ = this.UserService.fetchUser();
   }
+  deleteUser(userID) {
+    return this.user$ = this.UserService.deleteUser(userID);
+  }
   ngOnInit() {
   }
 
