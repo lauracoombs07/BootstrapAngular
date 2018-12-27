@@ -11,5 +11,10 @@
   }
   .JT{
     text-align: center;
+    
+  }
+  .jumbotron {
+    padding-bottom: 50px;
+    background-color: rgba(249, 252, 252, 0.842);
   }
   

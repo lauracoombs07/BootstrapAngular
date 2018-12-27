@@ -10,6 +10,25 @@
     font-size: 25px;
     font-weight: bold; 
   }
+  .card1 {
+    background-color: rgba(10, 10, 15, 0.76);
+    border-color: black;
+  }
+  .card {
+    background-color: rgba(128, 128, 128, 0.76);
+    border-color: black;
+  }
   .shop-now {
       text-align: center;
+      padding-bottom: 20px;
+  }
+  .flex-container {
+    padding-bottom: 30px;
+  }
+  .jumbotron {
+    padding-bottom: 50px;
+    background-color: rgba(249, 252, 252, 0.842)
+  }
+  .jumbocontainer {
+    padding-bottom: 150px;
   }

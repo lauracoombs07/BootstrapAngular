@@ -1,5 +1,4 @@
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar fix-top navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,7 +9,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/dog">Dogs</a>
         </li>
-        <li class="Cats">
+        <li class="nav-item">
           <a class="nav-link" href="/cat">Cats</a>
         </li>
         <li class="nav-item">
@@ -23,8 +22,12 @@
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        <!-- <div button *ngFor="let products of products$ | async" class="btn btn-secondary my-2 my-sm-0" (click)="searchProducts"()>Search</button></div> -->
+        <!-- <li *ngFor="let user of user$ | async" >  -->
+            <!-- <button class="delete" (click)="deleteUser(user.id)">Delete</button><hr/></li> -->
+            <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
       </form>
-    </div>
+    </div> 
   </nav>
 
 
@@ -36,11 +39,9 @@
    
   </div>
   
-
-  <nav class="navbar sticky-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">507 - Team Angular - Austin, Gabriel, Josh, Laura, Mike, Shane</a>
+  <!-- <nav class="navbar sticky-top navbar-light bg-light"> -->
+  <nav class="navbar fixed-bottom navbar-light">
+    <a class="navbar-brand">507 - Team Angular - Austin, Gabriel, Josh, Laura, Mike, Shane</a>
     <a class="nav-link" href="/admin">Admin Login</a>
   </nav>
 </body>
-
-<!-- here is our change. I am amazing -->
